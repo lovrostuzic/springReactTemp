@@ -1,7 +1,6 @@
-package services.securityServices;
+package com.springReactTemp.SpringReactTemp.services;
 
-
-import model.AppUser;
+import com.springReactTemp.SpringReactTemp.model.AppUser;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -10,10 +9,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class CustomUserDetails implements UserDetails {
+public class AppUserDetails implements UserDetails {
     private final AppUser user;
 
-    public CustomUserDetails(AppUser user) {
+    public AppUserDetails(AppUser user) {
+
         this.user = user;
     }
 
@@ -31,7 +31,7 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public String getUsername() {
-        return user.getUsername();
+        return user.getEmail();
     }
 
     @Override
