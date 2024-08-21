@@ -1,4 +1,4 @@
-package com.example.springreacttemp;
+package com.springReactTemp.SpringReactTemp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
